@@ -95,6 +95,12 @@ function initMobileMenu() {
       closeDrawer();
     }
   });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1024 && drawer.classList.contains('is-open')) {
+      closeDrawer();
+    }
+  }, { passive: true });
 }
 
 /* ==========================================================================
@@ -209,6 +215,9 @@ function initNeedInteractive() {
   tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       updateNeedView(btn.dataset.need);
+      if (window.innerWidth <= 1024) {
+        btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
     });
   });
 }

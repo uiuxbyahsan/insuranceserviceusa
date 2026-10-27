@@ -61,19 +61,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(1.875rem, 4.5vw, 3.75rem);
   font-weight: var(--font-weight-extrabold);
   letter-spacing: -0.025em;
 }
 
 h2 {
-  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-size: clamp(1.5rem, 3.2vw, 2.75rem);
   font-weight: var(--font-weight-bold);
   letter-spacing: -0.02em;
 }
 
 h3 {
-  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  font-size: clamp(1.1875rem, 2vw, 1.75rem);
   font-weight: var(--font-weight-bold);
   letter-spacing: -0.015em;
 }
@@ -643,43 +643,139 @@ p.lead {
 .stagger-4 { transition-delay: 320ms; }
 
 /* --------------------------------------------------------------------------
-   Responsive Media Queries
+   Responsive Media Queries & Adaptive Layouts
+   Covers Ultra-wide, Desktop, Laptops, Tablets (Landscape/Portrait), and Mobile
    -------------------------------------------------------------------------- */
+
+/* 1. Ultra-Wide & High-Resolution Displays (> 1440px) */
+@media (min-width: 1440px) {
+  :root {
+    --container-max-width: 1360px;
+  }
+}
+
+/* 2. Small Desktops & Laptops (1025px - 1180px) */
+@media (max-width: 1180px) {
+  .header-container {
+    gap: 16px;
+  }
+
+  .nav-desktop {
+    gap: 18px;
+  }
+
+  .nav-link {
+    font-size: 0.875rem;
+  }
+
+  .header-actions {
+    gap: 12px;
+  }
+
+  .btn-portal-badge {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
+  .header-phone {
+    font-size: 0.875rem;
+    padding: 5px 8px;
+  }
+
+  .editorial-split {
+    gap: 40px;
+  }
+}
+
+/* 3. Tablets Landscape & Portrait (769px - 1024px) */
 @media (max-width: 1024px) {
   :root {
     --space-4xl: 72px;
     --space-3xl: 48px;
   }
 
+  /* Header Navigation: Switch to clean touch drawer navigation */
+  .nav-desktop-wrap,
+  .nav-desktop,
+  .btn-portal-badge {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-container {
+    gap: 14px;
+    justify-content: space-between;
+  }
+
+  .header-actions {
+    gap: 12px;
+  }
+
+  /* Hero Section */
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 44px;
   }
 
   .hero-content {
     max-width: 100%;
   }
 
-  .coverage-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .hero-media-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
   }
 
+  .hero-float-card {
+    left: 16px;
+    bottom: 16px;
+    max-width: calc(100% - 32px);
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Coverage Cards Grid */
+  .coverage-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .coverage-card {
+    padding: 24px;
+    min-height: 220px;
+  }
+
+  /* Editorial Split Sections */
   .editorial-split,
   .editorial-split.reversed {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 36px;
   }
 
   .editorial-split.reversed .editorial-media {
-    order: 1;
-  }
-
-  .editorial-split.reversed .editorial-content {
     order: 2;
   }
 
+  .editorial-split.reversed .editorial-content {
+    order: 1;
+  }
+
+  .editorial-media {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+  }
+
+  /* Interactive Need Component */
   .need-interactive-box {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
 
   .need-nav-list {
@@ -687,86 +783,144 @@ p.lead {
     border-bottom: 1px solid var(--color-border);
     flex-direction: row;
     overflow-x: auto;
-    padding: 12px;
+    -webkit-overflow-scrolling: touch;
+    padding: 12px 16px;
+    gap: 10px;
+    scrollbar-width: none;
+  }
+
+  .need-nav-list::-webkit-scrollbar {
+    display: none;
   }
 
   .need-tab-btn {
     flex-shrink: 0;
+    padding: 10px 18px;
+    border-radius: var(--radius-full);
+  }
+
+  .need-tab-arrow {
+    display: none;
   }
 
   .need-content-panel {
     grid-template-columns: 1fr;
   }
 
-  .need-panel-image-wrap {
-    min-height: 280px;
+  .need-panel-body {
+    padding: 32px 28px;
   }
 
+  .need-panel-image-wrap {
+    min-height: 280px;
+    max-height: 380px;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Timeline */
   .timeline-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 28px;
   }
 
   .timeline-container::before {
     display: none;
   }
 
+  /* Trust Stats */
   .trust-stats-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
+  /* Contact Section */
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 36px;
   }
 
+  /* Footer */
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
   }
 }
 
+/* 4. Tablets Portrait & Large Smartphones (541px - 768px) */
 @media (max-width: 768px) {
   :root {
     --header-height: 72px;
     --header-height-scrolled: 64px;
     --space-4xl: 56px;
-    --container-padding: 18px;
   }
 
   body {
-    padding-bottom: 72px; /* Space for mobile sticky CTA bar */
+    padding-top: var(--header-height);
+    padding-bottom: calc(76px + var(--safe-bottom)); /* Clearance for mobile sticky bar */
   }
 
-  .nav-desktop,
-  .header-phone,
-  .btn-portal-badge {
+  /* Header adjustments */
+  .header-phone {
     display: none;
   }
 
-  .mobile-menu-toggle {
-    display: flex;
+  .header-logo {
+    height: 38px;
+    width: auto;
   }
 
-  .hero-float-card {
+  /* Hero adjustments */
+  .hero-section {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-3xl);
+  }
+
+  .hero-subhead {
+    font-size: 1.0625rem;
+    margin-bottom: 28px;
+  }
+
+  .hero-trust-row {
+    gap: 12px 18px;
+  }
+
+  .hero-trust-divider {
     display: none;
   }
 
+  /* Single-column coverage */
   .coverage-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
+  /* Commercial checklist */
+  .feature-checklist {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 20px 0 28px 0;
+  }
+
+  /* Timeline */
   .timeline-container {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 20px;
   }
 
+  /* Full-width CTA Banner */
   .cta-banner {
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px 24px;
+    padding: 36px 20px;
+    gap: 24px;
+  }
+
+  .cta-banner-title {
+    font-size: clamp(1.65rem, 4.5vw, 2.25rem);
   }
 
   .cta-banner-actions {
-    align-items: flex-start;
+    align-items: stretch;
     width: 100%;
   }
 
@@ -774,21 +928,51 @@ p.lead {
     width: 100%;
   }
 
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 36px;
+  .cta-call-link {
+    justify-content: center;
   }
 
-  .quote-category-grid {
-    grid-template-columns: repeat(2, 1fr);
+  /* Contact Card Box */
+  .contact-card-box {
+    padding: 24px 18px;
   }
 
   .form-row {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-brand-col {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-legal-links {
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.75rem;
+  }
+
+  /* Modals */
+  .modal-overlay {
+    padding: 10px;
+    align-items: center;
   }
 
   .modal-container {
     border-radius: var(--radius-lg);
+    max-height: 94vh;
   }
 
   .wizard-header,
@@ -798,8 +982,242 @@ p.lead {
     padding-right: 20px;
   }
 
+  .quote-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  /* Mobile Sticky Bottom CTA Bar */
   .mobile-sticky-cta {
     display: block;
+    padding: 10px 16px max(10px, env(safe-area-inset-bottom));
+  }
+}
+
+/* 5. Standard Smartphones (381px - 540px) */
+@media (max-width: 540px) {
+  :root {
+    --header-height: 68px;
+    --header-height-scrolled: 60px;
+  }
+
+  /* Hero Section */
+  .hero-headline {
+    margin-bottom: 16px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-trust-row {
+    padding-top: 18px;
+    gap: 10px 16px;
+  }
+
+  .hero-trust-item {
+    font-size: 0.8125rem;
+  }
+
+  /* Hero Floating Badge */
+  .hero-float-card {
+    padding: 10px 14px;
+    gap: 10px;
+    max-width: calc(100% - 24px);
+    left: 12px;
+    bottom: 12px;
+  }
+
+  .float-card-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .float-card-title {
+    font-size: 0.8125rem;
+  }
+
+  .float-card-sub {
+    font-size: 0.6875rem;
+  }
+
+  /* Interactive Need Panel */
+  .need-panel-body {
+    padding: 20px 16px;
+  }
+
+  .need-tag-list {
+    gap: 6px;
+    margin: 14px 0 20px 0;
+  }
+
+  .need-tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+
+  /* Trust Stats */
+  .trust-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .trust-stat-card {
+    padding: 16px 10px;
+  }
+
+  .stat-number {
+    font-size: 2.125rem;
+  }
+
+  .stat-label {
+    font-size: 0.8125rem;
+  }
+
+  /* FAQ Section */
+  .faq-search-box {
+    margin-bottom: 24px;
+  }
+
+  .faq-search-input {
+    padding: 13px 16px 13px 44px;
+    font-size: 0.9375rem;
+  }
+
+  .faq-search-icon {
+    left: 14px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .faq-trigger {
+    padding: 16px 14px;
+    font-size: 0.9375rem;
+  }
+
+  .faq-body-content {
+    padding: 0 14px 18px 14px;
+    font-size: 0.875rem;
+  }
+
+  /* Contact Direct Cards */
+  .contact-direct-card {
+    padding: 16px 14px;
+    gap: 12px;
+  }
+
+  .contact-direct-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-direct-value {
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+  /* Quote Wizard Modal */
+  .wizard-header {
+    padding: 20px 16px 16px 16px;
+  }
+
+  .wizard-stepper {
+    margin-top: 16px;
+  }
+
+  .step-bubble {
+    width: 26px;
+    height: 26px;
+    font-size: 0.75rem;
+  }
+
+  .step-bubble-label {
+    font-size: 0.65rem;
+  }
+
+  .wizard-body {
+    padding: 20px 16px;
+  }
+
+  .wizard-footer {
+    flex-direction: column-reverse;
+    gap: 12px;
+    align-items: stretch;
+    padding: 16px;
+  }
+
+  .wizard-footer > div {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .wizard-footer .btn {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .confidential-tag {
+    justify-content: center;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  /* Client Portal Modal */
+  #portalLoginView {
+    padding: 28px 18px !important;
+  }
+
+  #portalDashboardView {
+    padding: 24px 16px !important;
+  }
+
+  /* Toast Notifications */
+  .toast-container {
+    left: 12px;
+    right: 12px;
+    bottom: 84px;
+  }
+
+  .toast {
+    font-size: 0.875rem;
+    padding: 12px 14px;
+  }
+}
+
+/* 6. Small / Narrow Smartphones (<= 380px) */
+@media (max-width: 380px) {
+  .header-logo {
+    height: 32px;
+  }
+
+  .header-actions .btn {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+
+  .quote-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-bubble-label {
+    display: none;
+  }
+
+  .hero-float-card {
+    display: none;
   }
 }
 

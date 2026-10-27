@@ -15,6 +15,7 @@
   font-weight: var(--font-weight-semibold);
   line-height: 1;
   padding: 14px 26px;
+  min-height: 44px;
   border-radius: var(--radius-sm);
   border: 1px solid transparent;
   cursor: pointer;
@@ -24,6 +25,8 @@
   user-select: none;
   position: relative;
   overflow: hidden;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn svg {
@@ -329,15 +332,17 @@
   right: 0;
   bottom: 0;
   width: 100%;
-  max-width: 360px;
+  max-width: min(360px, 86vw);
   background-color: #FFFFFF;
   z-index: 1002;
   transform: translateX(100%);
   transition: transform var(--transition-smooth);
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 24px clamp(16px, 4vw, 24px) max(24px, env(safe-area-inset-bottom));
   box-shadow: -8px 0 32px rgba(11, 37, 53, 0.15);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-nav-drawer.is-open {
@@ -944,17 +949,19 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(7, 25, 36, 0.7);
+  background-color: rgba(7, 25, 36, 0.75);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 2000;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: clamp(8px, 2.5vw, 24px);
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition-base), visibility var(--transition-base);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal-overlay.is-active {
@@ -967,8 +974,9 @@
   border-radius: var(--radius-xl);
   max-width: 800px;
   width: 100%;
-  max-height: 90vh;
+  max-height: min(92vh, 880px);
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   box-shadow: var(--shadow-xl);
   position: relative;
   transform: translateY(20px) scale(0.98);
@@ -1200,12 +1208,15 @@
   width: 100%;
   padding: 13px 16px;
   font-family: var(--font-family-body);
-  font-size: 0.9375rem;
+  font-size: 16px; /* 16px strictly avoids auto-zoom on iOS Safari */
+  min-height: 48px;
   color: var(--color-text-primary);
   background-color: #FFFFFF;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .form-input:focus,

@@ -55,22 +55,22 @@
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.65;
 
-  /* Spacing Scale */
+  /* Spacing Scale (Fluid & Adaptive) */
   --space-2xs: 4px;
   --space-xs: 8px;
   --space-sm: 12px;
   --space-md: 16px;
   --space-lg: 24px;
-  --space-xl: 32px;
-  --space-2xl: 48px;
-  --space-3xl: 64px;
-  --space-4xl: 96px;
-  --space-5xl: 128px;
+  --space-xl: clamp(24px, 3vw, 32px);
+  --space-2xl: clamp(28px, 4vw, 48px);
+  --space-3xl: clamp(36px, 5vw, 64px);
+  --space-4xl: clamp(48px, 7vw, 96px);
+  --space-5xl: clamp(64px, 9vw, 128px);
 
   /* Layout Containers */
   --container-max-width: 1320px;
   --container-narrow-width: 980px;
-  --container-padding: 24px;
+  --container-padding: clamp(16px, 3.5vw, 28px);
 
   /* Border Radii */
   --radius-xs: 4px;
@@ -97,4 +97,11 @@
   /* Header Height */
   --header-height: 84px;
   --header-height-scrolled: 70px;
+
+  /* Safe Area Insets for Mobile / Notched Displays */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
 }
+
