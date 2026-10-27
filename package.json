@@ -1,0 +1,9 @@
+{
+  "name": "insurance-usa-service-site",
+  "version": "1.0.0",
+  "description": "Insurance Services USA Website",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
+  }
+}

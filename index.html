@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Services USA | Independent Insurance Agency Since 1991</title>
+  
+  <meta name="description" content="Independent insurance guidance for businesses, individuals, and families. Specializing in commercial liability, property, auto fleets, personal lines, and surety bonds since 1991.">
+  <meta name="keywords" content="Insurance Services USA, commercial insurance, independent insurance agency, business insurance, personal auto, general liability, workers comp, Spring Hill TN">
+  <meta name="author" content="Insurance Services USA">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.insuranceservicesusa.com/">
+  <meta property="og:title" content="Insurance Services USA | Coverage Designed Around What Matters Most">
+  <meta property="og:description" content="Independent insurance guidance for businesses, individuals, and families. 50+ carrier network, personalized support since 1991.">
+  <meta property="og:image" content="assets/commercial_fleet.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/avif" href="Logo.avif">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InsuranceAgency",
+    "name": "Insurance Services USA",
+    "image": "https://www.insuranceservicesusa.com/logo.png",
+    "url": "https://www.insuranceservicesusa.com",
+    "telephone": "+1-888-747-5940",
+    "email": "Joecoomer@insuranceservicesusa.net",
+    "foundingDate": "1991",
+    "address": {
+      "@type": "PostalAddress",
+      "postOfficeBoxNumber": "PO Box 2074",
+      "addressLocality": "Spring Hill",
+      "addressRegion": "TN",
+      "postalCode": "37174",
+      "addressCountry": "US"
+    },
+    "description": "Independent insurance agency providing personalized commercial, auto, property, and life insurance guidance since 1991."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. Global Header Navigation
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#hero" class="header-brand" aria-label="Insurance Services USA Home">
+        <picture>
+          <source srcset="Logo.avif" type="image/avif">
+          <img src="logo.png" alt="Insurance Services USA Logo" class="header-logo" width="180" height="48">
+        </picture>
+      </a>
+
+      <nav class="nav-desktop-wrap" aria-label="Main Navigation">
+        <ul class="nav-desktop">
+          <li class="nav-item"><a href="#coverage" class="nav-link">Coverage</a></li>
+          <li class="nav-item"><a href="#whyUs" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#commercial" class="nav-link">Commercial</a></li>
+          <li class="nav-item"><a href="#howItWorks" class="nav-link">How It Works</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-portal-badge" onclick="openClientPortal()" aria-label="Open Client Portal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          Client Portal
+        </button>
+
+        <a href="tel:8887475940" class="header-phone" aria-label="Call 888-747-5940">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          888-747-5940
+        </a>
+
+        <button type="button" class="btn btn-primary btn-sm" onclick="openQuoteWizard()">
+          Get a Quote
+          <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <img src="logo.png" alt="Insurance Services USA" class="header-logo" width="140" height="38">
+      <button type="button" class="modal-close-btn mobile-nav-close" aria-label="Close navigation">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#coverage">Coverage <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
+      <li><a href="#whyUs">About <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
+      <li><a href="#commercial">Commercial <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
+      <li><a href="#howItWorks">How It Works <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
+      <li><a href="#faq">FAQ <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
+      <li><a href="#contact">Contact <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
+      <li>
+        <a href="javascript:void(0)" onclick="closeMobileNav(); openClientPortal();" style="color: var(--color-primary-blue);">
+          Client Portal
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <a href="tel:8887475940" class="btn btn-secondary btn-block">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        888-747-5940
+      </a>
+      <button type="button" class="btn btn-primary btn-block" onclick="closeMobileNav(); openQuoteWizard();">
+        Get a Quote →
+      </button>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- ======================================================================
+         2. Hero Section (Cinematic Editorial Split)
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Content Left -->
+          <div class="hero-content">
+            <div class="eyebrow reveal-on-scroll">INDEPENDENT INSURANCE AGENCY</div>
+            <h1 class="hero-headline reveal-on-scroll stagger-1">
+              Coverage designed around what matters most.
+            </h1>
+            <p class="hero-subhead reveal-on-scroll stagger-2">
+              Insurance guidance for businesses, individuals and families.
+            </p>
+
+            <div class="hero-cta-group reveal-on-scroll stagger-3">
+              <button type="button" class="btn btn-primary btn-lg" onclick="openQuoteWizard()">
+                Get a Quote
+                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+
+              <a href="#contact" class="btn btn-secondary btn-lg">
+                Talk to an Expert
+              </a>
+            </div>
+
+            <!-- Small Trust Indicators -->
+            <div class="hero-trust-row reveal-on-scroll stagger-4">
+              <div class="hero-trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                Independent Agency
+              </div>
+              <div class="hero-trust-divider"></div>
+              <div class="hero-trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+                Personalized Guidance
+              </div>
+              <div class="hero-trust-divider"></div>
+              <div class="hero-trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                Serving Clients Since 1991
+              </div>
+            </div>
+          </div>
+
+          <!-- Media Right -->
+          <div class="hero-media-wrap reveal-on-scroll stagger-2">
+            <div class="hero-image-frame">
+              <img src="assets/advisor_consultation.jpg" alt="Insurance advisor conducting executive consultation with client" class="hero-img">
+            </div>
+
+            <!-- Floating Trust Badge -->
+            <div class="hero-float-card">
+              <div class="float-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <div>
+                <div class="float-card-title">50+ Carrier Network</div>
+                <div class="float-card-sub">A-Rated Objective Coverage</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. Coverage Section (Cards with Lucide Icons & Interactions)
+         ====================================================================== -->
+    <section class="section section-surface" id="coverage">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="eyebrow">PORTFOLIO OF COVERAGE</div>
+          <h2>Insurance for what matters.</h2>
+          <p>Coverage tailored to your needs.</p>
+        </div>
+
+        <div class="coverage-grid">
+          
+          <!-- Commercial -->
+          <div class="coverage-card reveal-on-scroll stagger-1" onclick="openQuoteWizard('Commercial')" tabindex="0" role="button" aria-label="Commercial Insurance">
+            <div>
+              <div class="coverage-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+              </div>
+              <h3 class="coverage-card-title">Commercial</h3>
+              <p class="coverage-card-desc">Protect the business you've built.</p>
+            </div>
+            <div class="coverage-card-action">
+              Explore →
+            </div>
+          </div>
+
+          <!-- Personal -->
+          <div class="coverage-card reveal-on-scroll stagger-2" onclick="openQuoteWizard('Personal')" tabindex="0" role="button" aria-label="Personal Insurance">
+            <div>
+              <div class="coverage-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+              <h3 class="coverage-card-title">Personal</h3>
+              <p class="coverage-card-desc">Defend your home, lifestyle and assets.</p>
+            </div>
+            <div class="coverage-card-action">
+              Explore →
+            </div>
+          </div>
+
+          <!-- Auto -->
+          <div class="coverage-card reveal-on-scroll stagger-3" onclick="openQuoteWizard('Auto')" tabindex="0" role="button" aria-label="Auto and Fleet Insurance">
+            <div>
+              <div class="coverage-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="1" y="3" width="22" height="13" rx="2" ry="2"></rect>
+                  <circle cx="7" cy="18" r="2"></circle>
+                  <circle cx="17" cy="18" r="2"></circle>
+                  <path d="M5 8h14"></path>
+                </svg>
+              </div>
+              <h3 class="coverage-card-title">Auto</h3>
+              <p class="coverage-card-desc">Confidence on every mile traveled.</p>
+            </div>
+            <div class="coverage-card-action">
+              Explore →
+            </div>
+          </div>
+
+          <!-- Property -->
+          <div class="coverage-card reveal-on-scroll stagger-1" onclick="openQuoteWizard('Property')" tabindex="0" role="button" aria-label="Property Insurance">
+            <div>
+              <div class="coverage-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                  <line x1="9" y1="22" x2="9" y2="2"/>
+                  <line x1="15" y1="22" x2="15" y2="2"/>
+                  <line x1="4" y1="7" x2="20" y2="7"/>
+                  <line x1="4" y1="12" x2="20" y2="12"/>
+                  <line x1="4" y1="17" x2="20" y2="17"/>
+                </svg>
+              </div>
+              <h3 class="coverage-card-title">Property</h3>
+              <p class="coverage-card-desc">Safeguard what you've worked hard for.</p>
+            </div>
+            <div class="coverage-card-action">
+              Explore →
+            </div>
+          </div>
+
+          <!-- Life & Health -->
+          <div class="coverage-card reveal-on-scroll stagger-2" onclick="openQuoteWizard('Life')" tabindex="0" role="button" aria-label="Life and Health Insurance">
+            <div>
+              <div class="coverage-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                </svg>
+              </div>
+              <h3 class="coverage-card-title">Life & Health</h3>
+              <p class="coverage-card-desc">Long-term security for who matters most.</p>
+            </div>
+            <div class="coverage-card-action">
+              Explore →
+            </div>
+          </div>
+
+          <!-- Specialty -->
+          <div class="coverage-card reveal-on-scroll stagger-3" onclick="openQuoteWizard('Specialty')" tabindex="0" role="button" aria-label="Specialty Lines and Bonds">
+            <div>
+              <div class="coverage-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+              <h3 class="coverage-card-title">Specialty</h3>
+              <p class="coverage-card-desc">Coverage engineered for unique exposures.</p>
+            </div>
+            <div class="coverage-card-action">
+              Explore →
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. Why Insurance Services USA (Editorial Split Section)
+         ====================================================================== -->
+    <section class="section" id="whyUs">
+      <div class="container">
+        <div class="editorial-split">
+          
+          <!-- Media Left -->
+          <div class="editorial-media reveal-on-scroll">
+            <img src="assets/photo_business_1.jpg" alt="Executive hand on car door - Insurance Services USA" loading="lazy">
+          </div>
+
+          <!-- Content Right -->
+          <div class="editorial-content reveal-on-scroll stagger-1">
+            <div class="eyebrow">WHY INSURANCE SERVICES USA</div>
+            <h2>Insurance made easier.</h2>
+            <p class="editorial-lead">
+              We help you understand your options, explore coverage and move forward with confidence.
+            </p>
+
+            <div class="benefits-minimal-list">
+              
+              <div class="benefit-item">
+                <div class="benefit-num">01</div>
+                <div class="benefit-info">
+                  <h3>Independent</h3>
+                  <p>We work for you, not the insurance companies. Access to 50+ top carriers ensures objective advice and competitive pricing.</p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-num">02</div>
+                <div class="benefit-info">
+                  <h3>Personalized</h3>
+                  <p>Direct communication with dedicated advisors who take the time to evaluate your exact operational or personal risks.</p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-num">03</div>
+                <div class="benefit-info">
+                  <h3>Straightforward</h3>
+                  <p>No industry jargon or hidden exclusions. Clear side-by-side policy comparisons so you know exactly what is protected.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. Commercial Insurance Feature (Visually Rich Full-Width Feature)
+         ====================================================================== -->
+    <section class="section section-surface" id="commercial">
+      <div class="container">
+        <div class="editorial-split reversed">
+          
+          <!-- Content Left -->
+          <div class="editorial-content reveal-on-scroll">
+            <div class="eyebrow">COMMERCIAL INSURANCE</div>
+            <h2>Protect the business you've built.</h2>
+            <p class="editorial-lead">
+              Coverage designed around the risks of running a business.
+            </p>
+
+            <ul class="feature-checklist">
+              <li class="feature-check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                General Liability
+              </li>
+              <li class="feature-check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Professional Liability (E&O)
+              </li>
+              <li class="feature-check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Commercial Auto & Fleets
+              </li>
+              <li class="feature-check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Workers' Compensation
+              </li>
+              <li class="feature-check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Commercial Property
+              </li>
+              <li class="feature-check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Contract Surety Bonds
+              </li>
+            </ul>
+
+            <button type="button" class="btn btn-primary" onclick="openQuoteWizard('Commercial')">
+              Explore Commercial Insurance
+              <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Media Right (Authentic Fleet Photography from original site) -->
+          <div class="editorial-media reveal-on-scroll stagger-1">
+            <img src="assets/commercial_fleet.jpg" alt="Commercial auto fleet and business protection" loading="lazy">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. Insurance by Need (Interactive Storytelling Component)
+         ====================================================================== -->
+    <section class="section" id="byNeed">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="eyebrow">TAILORED SOLUTIONS</div>
+          <h2>What are you protecting?</h2>
+          <p>Select your risk category to explore precision coverage options.</p>
+        </div>
+
+        <div class="need-interactive-box reveal-on-scroll">
+          
+          <!-- Nav list left -->
+          <div class="need-nav-list" role="tablist" aria-label="Insurance protection categories">
+            
+            <button type="button" class="need-tab-btn is-active" data-need="business" role="tab" aria-selected="true">
+              <div class="need-tab-info">
+                <div class="need-tab-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                  </svg>
+                </div>
+                <div class="need-tab-title">Business</div>
+              </div>
+              <svg class="need-tab-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+
+            <button type="button" class="need-tab-btn" data-need="vehicles" role="tab" aria-selected="false">
+              <div class="need-tab-info">
+                <div class="need-tab-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="3" width="22" height="13" rx="2" ry="2"></rect>
+                    <circle cx="7" cy="18" r="2"></circle>
+                    <circle cx="17" cy="18" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="need-tab-title">Vehicles</div>
+              </div>
+              <svg class="need-tab-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+
+            <button type="button" class="need-tab-btn" data-need="property" role="tab" aria-selected="false">
+              <div class="need-tab-info">
+                <div class="need-tab-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  </svg>
+                </div>
+                <div class="need-tab-title">Property</div>
+              </div>
+              <svg class="need-tab-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+
+            <button type="button" class="need-tab-btn" data-need="family" role="tab" aria-selected="false">
+              <div class="need-tab-info">
+                <div class="need-tab-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                  </svg>
+                </div>
+                <div class="need-tab-title">Family</div>
+              </div>
+              <svg class="need-tab-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+
+            <button type="button" class="need-tab-btn" data-need="employees" role="tab" aria-selected="false">
+              <div class="need-tab-info">
+                <div class="need-tab-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <div class="need-tab-title">Employees</div>
+              </div>
+              <svg class="need-tab-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+
+            <button type="button" class="need-tab-btn" data-need="specialty" role="tab" aria-selected="false">
+              <div class="need-tab-info">
+                <div class="need-tab-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </div>
+                <div class="need-tab-title">Specialty Needs</div>
+              </div>
+              <svg class="need-tab-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+
+          </div>
+
+          <!-- Dynamic Panel content -->
+          <div class="need-content-panel">
+            <div class="need-panel-body">
+              <div>
+                <h3 id="needTitle" style="margin-bottom: 12px; transition: opacity 0.2s;">Commercial & Business Operations</h3>
+                <p id="needLead" class="lead" style="margin-bottom: 24px; transition: opacity 0.2s;">
+                  Comprehensive protection designed around the exact operational risks of running your company, from liability exposures to business interruption.
+                </p>
+                <div id="needTags" class="need-tag-list">
+                  <span class="need-tag">General Liability</span>
+                  <span class="need-tag">Commercial Property</span>
+                  <span class="need-tag">Workers' Comp</span>
+                  <span class="need-tag">Commercial Auto</span>
+                  <span class="need-tag">Surety Bonds</span>
+                  <span class="need-tag">Cyber Defense</span>
+                </div>
+              </div>
+
+              <div>
+                <button type="button" id="needCtaBtn" class="btn btn-primary" onclick="openQuoteWizard('Commercial')">
+                  Request Coverage Quote →
+                </button>
+              </div>
+            </div>
+
+            <div class="need-panel-image-wrap">
+              <img id="needImage" src="assets/commercial_fleet.jpg" alt="Commercial Fleet and Business Protection" class="need-panel-image">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. How It Works (Minimal Horizontal Timeline)
+         ====================================================================== -->
+    <section class="section section-surface" id="howItWorks">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="eyebrow">OUR PROCESS</div>
+          <h2>Insurance, without the complexity.</h2>
+          <p>Four transparent steps to protect what matters most.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <div class="timeline-step reveal-on-scroll stagger-1">
+            <div class="step-number-wrap">01</div>
+            <h3 class="step-title">Tell us what you need</h3>
+            <p class="step-desc">Share your business, personal, or property details in a fast, guided 2-minute request.</p>
+          </div>
+
+          <div class="timeline-step reveal-on-scroll stagger-2">
+            <div class="step-number-wrap">02</div>
+            <h3 class="step-title">We explore your options</h3>
+            <p class="step-desc">As an independent agency, we shop 50+ leading carriers to match precise coverage to your budget.</p>
+          </div>
+
+          <div class="timeline-step reveal-on-scroll stagger-3">
+            <div class="step-number-wrap">03</div>
+            <h3 class="step-title">Understand your coverage</h3>
+            <p class="step-desc">We walk through terms and limits in plain English so there are no surprises when it counts.</p>
+          </div>
+
+          <div class="timeline-step reveal-on-scroll stagger-4">
+            <div class="step-number-wrap">04</div>
+            <h3 class="step-title">Move forward</h3>
+            <p class="step-desc">Bind your policy seamlessly with direct advisor support, fast proof of insurance, and 24/7 access.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. Trust Section (Verified Statistics)
+         ====================================================================== -->
+    <section class="section" id="trust">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="eyebrow">PROVEN RECORD</div>
+          <h2>Experience you can count on.</h2>
+          <p>Independent advocacy since 1991.</p>
+        </div>
+
+        <div class="trust-stats-grid">
+          
+          <div class="trust-stat-card reveal-on-scroll stagger-1">
+            <div class="stat-number" data-count="1991" data-prefix="">1991</div>
+            <div class="stat-label">Serving Clients Since</div>
+            <div class="stat-subtext">34+ Years of Insurance Dedication</div>
+          </div>
+
+          <div class="trust-stat-card reveal-on-scroll stagger-2">
+            <div class="stat-number" data-count="100" data-suffix="%">100%</div>
+            <div class="stat-label">Independent Agency</div>
+            <div class="stat-subtext">Beholden to You, Not National Firms</div>
+          </div>
+
+          <div class="trust-stat-card reveal-on-scroll stagger-3">
+            <div class="stat-number" data-count="50" data-suffix="+">50+</div>
+            <div class="stat-label">Top-Rated Carriers</div>
+            <div class="stat-subtext">Comprehensive Market Comparison</div>
+          </div>
+
+          <div class="trust-stat-card reveal-on-scroll stagger-4">
+            <div class="stat-number" data-count="50" data-suffix="">50</div>
+            <div class="stat-label">States Licensed Reach</div>
+            <div class="stat-subtext">Commercial & Specialty Protection</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. FAQ Section (Accordion with Real-Time Search)
+         ====================================================================== -->
+    <section class="section section-surface" id="faq">
+      <div class="container container-narrow">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="eyebrow">COMMON QUESTIONS</div>
+          <h2>Questions? We've got answers.</h2>
+          <p>Everything you need to know about our independent coverage guidance.</p>
+        </div>
+
+        <!-- FAQ Search Filter -->
+        <div class="faq-search-box reveal-on-scroll">
+          <svg class="faq-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="faqSearchInput" class="faq-search-input" placeholder="Search insurance questions..." aria-label="Search insurance questions">
+        </div>
+
+        <!-- Accordions -->
+        <div class="faq-accordion-list" id="faqAccordionList">
+          
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>How does an independent insurance agency work?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Unlike captive agents who work exclusively for one carrier and can only offer their specific products, an independent agency like Insurance Services USA represents you. We partner with over 50 top-rated national and regional insurers to compare coverages, find competitive rates, and advocate for your claims.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Can you help me compare coverage options?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Yes, that is our primary specialty. We analyze your current coverage, identify any dangerous liability gaps or unnecessary overlaps, and shop across multiple reputable insurance companies to deliver clear, side-by-side comparisons tailored to your exact budget.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>What insurance does my business need?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Most commercial enterprises start with General Liability to protect against third-party bodily injury and property damage, and Commercial Property for physical assets. If you employ staff, Workers' Compensation is required by law in most states. If your company operates vehicles, Commercial Auto is critical. We review your specific industry exposures to build a custom solution.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Can you help if my policy was canceled or rates increased?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Absolutely. Carriers frequently revise their risk appetite or raise premiums across entire geographic markets. Because Insurance Services USA is connected with dozens of specialized carriers, we do the shopping for you immediately to prevent any coverage lapse and secure stable, competitive terms.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Can you explain my coverage in simple terms?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Clarity is our standard. We break down deductibles, aggregate limits, endorsements, and exclusions into straightforward language. You will understand precisely what is covered and how your protection operates before you make any decisions.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="faqNoResults" style="display: none; text-align: center; padding: 32px; color: var(--color-text-secondary);">
+          No questions matching your search. Call us directly at <a href="tel:8887475940" style="font-weight: 600;">888-747-5940</a> and an advisor will assist you immediately.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. Full-Width Quote CTA
+         ====================================================================== -->
+    <section class="section" style="padding-top: 40px; padding-bottom: 40px;">
+      <div class="container">
+        
+        <div class="cta-banner reveal-on-scroll">
+          <div class="cta-banner-content">
+            <div class="eyebrow eyebrow-light">READY FOR GUIDANCE</div>
+            <h2 class="cta-banner-title">Let's find the right coverage for you.</h2>
+            <p class="cta-banner-desc">Tell us what you need. We'll help with the next step.</p>
+          </div>
+
+          <div class="cta-banner-actions">
+            <button type="button" class="btn btn-white btn-lg" onclick="openQuoteWizard()">
+              Request a Quote
+              <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+
+            <a href="tel:8887475940" class="cta-call-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              Or call 888-747-5940
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         11. Contact Page Section
+         ====================================================================== -->
+    <section class="section section-surface" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="eyebrow">GET IN TOUCH</div>
+          <h2>Let's talk.</h2>
+          <p>Have a question or need help with coverage? Our advisors are here for you.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Form Left -->
+          <div class="contact-card-box reveal-on-scroll">
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contactName">Your Name <span class="req">*</span></label>
+                  <input type="text" id="contactName" class="form-input" placeholder="First & Last Name" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactEmail">Email Address <span class="req">*</span></label>
+                  <input type="email" id="contactEmail" class="form-input" placeholder="name@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contactPhone">Phone Number <span class="req">*</span></label>
+                  <input type="tel" id="contactPhone" class="form-input" placeholder="e.g. 888-747-5940" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactCoverage">Subject / Interest</label>
+                  <select id="contactCoverage" class="form-select">
+                    <option value="Commercial">Commercial Insurance</option>
+                    <option value="Auto">Auto & Fleet</option>
+                    <option value="Property">Property & Home</option>
+                    <option value="Life">Life & Health</option>
+                    <option value="Bonds">Surety Bonds</option>
+                    <option value="General">General Inquiry</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">How can we assist you?</label>
+                <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="Briefly describe your coverage needs or question..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message
+                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Direct Details Right -->
+          <div class="contact-info-panel reveal-on-scroll stagger-1">
+            
+            <div class="contact-direct-card">
+              <div class="contact-direct-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-direct-title">Toll-Free Phone</div>
+                <div class="contact-direct-value"><a href="tel:8887475940">888-747-5940</a></div>
+                <div class="contact-direct-sub">Monday – Friday: 8:30 AM – 5:00 PM CST</div>
+              </div>
+            </div>
+
+            <div class="contact-direct-card">
+              <div class="contact-direct-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-direct-title">Direct Email</div>
+                <div class="contact-direct-value"><a href="mailto:Joecoomer@insuranceservicesusa.net">Joecoomer@insuranceservicesusa.net</a></div>
+                <div class="contact-direct-sub">General Inquiries: 615-473-1402 | Fax: 1-877-892-3362</div>
+              </div>
+            </div>
+
+            <div class="contact-direct-card">
+              <div class="contact-direct-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-direct-title">Mailing & Office Location</div>
+                <div class="contact-direct-value">PO Box 2074</div>
+                <div class="contact-direct-sub">Spring Hill, Tennessee 37174</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       12. Global Footer (Multi-Column)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrap">
+            <picture>
+              <source srcset="Logo.avif" type="image/avif">
+              <img src="logo.png" alt="Insurance Services USA" class="footer-logo" width="160" height="42">
+            </picture>
+          </div>
+          <p class="footer-tagline">
+            Independent insurance guidance for businesses, individuals and families since 1991.
+          </p>
+          <button type="button" class="btn btn-outline-white btn-sm" onclick="openQuoteWizard()">
+            Request a Quote →
+          </button>
+        </div>
+
+        <!-- Column 2: Coverage -->
+        <div>
+          <div class="footer-col-title">Coverage</div>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="openQuoteWizard('Commercial')" class="footer-link">Commercial</a></li>
+            <li><a href="javascript:void(0)" onclick="openQuoteWizard('Personal')" class="footer-link">Personal</a></li>
+            <li><a href="javascript:void(0)" onclick="openQuoteWizard('Auto')" class="footer-link">Auto & Fleet</a></li>
+            <li><a href="javascript:void(0)" onclick="openQuoteWizard('Property')" class="footer-link">Property</a></li>
+            <li><a href="javascript:void(0)" onclick="openQuoteWizard('Life')" class="footer-link">Life & Health</a></li>
+            <li><a href="javascript:void(0)" onclick="openQuoteWizard('Specialty')" class="footer-link">Specialty & Bonds</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Company -->
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="#whyUs" class="footer-link">About Agency</a></li>
+            <li><a href="#howItWorks" class="footer-link">Our Process</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+            <li><a href="javascript:void(0)" onclick="openClientPortal()" class="footer-link">Client Portal</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="tel:8887475940">888-747-5940 (Toll Free)</a>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:Joecoomer@insuranceservicesusa.net">Joecoomer@insuranceservicesusa.net</a>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>PO Box 2074, Spring Hill, TN 37174</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Insurance Services USA. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#contact" class="footer-legal-link">Privacy Policy</a>
+          <span>•</span>
+          <a href="#contact" class="footer-legal-link">Terms of Service</a>
+          <span>•</span>
+          <a href="#contact" class="footer-legal-link">Licensing Information</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       13. Guided Multi-Step Quote Modal
+       ======================================================================== -->
+  <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="wizardTitle">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" id="closeQuoteModal" aria-label="Close quote modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="wizard-header">
+        <div class="eyebrow">GUIDED REQUEST</div>
+        <h2 id="wizardTitle" style="font-size: 1.5rem;">Request an Insurance Quote</h2>
+        
+        <!-- Stepper Indicators -->
+        <div class="wizard-stepper">
+          <div class="wizard-step-indicator active" data-step="1">
+            <div class="step-bubble">01</div>
+            <div class="step-bubble-label">Coverage</div>
+          </div>
+          <div class="wizard-step-indicator" data-step="2">
+            <div class="step-bubble">02</div>
+            <div class="step-bubble-label">Your Details</div>
+          </div>
+          <div class="wizard-step-indicator" data-step="3">
+            <div class="step-bubble">03</div>
+            <div class="step-bubble-label">Specifications</div>
+          </div>
+          <div class="wizard-step-indicator" data-step="4">
+            <div class="step-bubble">04</div>
+            <div class="step-bubble-label">Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wizard-body">
+        
+        <!-- Step 1: Coverage Selection -->
+        <div class="wizard-step-pane is-active" data-step="1">
+          <h3 style="font-size: 1.125rem; margin-bottom: 6px;">What do you need to protect?</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem;">Select your primary coverage requirement.</p>
+
+          <div class="quote-category-grid">
+            <div class="quote-category-item is-selected" data-category="Commercial">
+              <div class="quote-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <div class="quote-cat-title">Commercial</div>
+            </div>
+
+            <div class="quote-category-item" data-category="Personal">
+              <div class="quote-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              </div>
+              <div class="quote-cat-title">Personal</div>
+            </div>
+
+            <div class="quote-category-item" data-category="Auto">
+              <div class="quote-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="22" height="13" rx="2" ry="2"></rect><circle cx="7" cy="18" r="2"></circle><circle cx="17" cy="18" r="2"></circle></svg>
+              </div>
+              <div class="quote-cat-title">Auto & Fleet</div>
+            </div>
+
+            <div class="quote-category-item" data-category="Property">
+              <div class="quote-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/></svg>
+              </div>
+              <div class="quote-cat-title">Property</div>
+            </div>
+
+            <div class="quote-category-item" data-category="Life">
+              <div class="quote-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+              <div class="quote-cat-title">Life & Health</div>
+            </div>
+
+            <div class="quote-category-item" data-category="Specialty">
+              <div class="quote-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+              </div>
+              <div class="quote-cat-title">Specialty / Bonds</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Contact Details -->
+        <div class="wizard-step-pane" data-step="2">
+          <h3 style="font-size: 1.125rem; margin-bottom: 6px;">Your Contact Details</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-bottom: 20px;">We use this strictly to deliver your insurance quote comparison.</p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="qFirstName">First Name <span class="req">*</span></label>
+              <input type="text" id="qFirstName" class="form-input" placeholder="e.g. John" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="qLastName">Last Name <span class="req">*</span></label>
+              <input type="text" id="qLastName" class="form-input" placeholder="e.g. Miller" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="qEmail">Email Address <span class="req">*</span></label>
+              <input type="email" id="qEmail" class="form-input" placeholder="name@domain.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="qPhone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="qPhone" class="form-input" placeholder="(888) 747-5940" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="qCompany">Business / Organization Name <span style="font-weight: 400; color: var(--color-text-muted);">(Optional)</span></label>
+            <input type="text" id="qCompany" class="form-input" placeholder="e.g. Miller Logistics LLC">
+          </div>
+        </div>
+
+        <!-- Step 3: Coverage Specifics -->
+        <div class="wizard-step-pane" data-step="3">
+          <h3 id="dynCoverageTitle" style="font-size: 1.125rem; margin-bottom: 6px;">Coverage Specifications</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-bottom: 20px;">Provide additional context so our brokers can pinpoint appropriate carrier programs.</p>
+
+          <div class="form-group">
+            <label class="form-label" for="qTimeframe">Target Policy Start Date</label>
+            <select id="qTimeframe" class="form-select">
+              <option value="Immediate (Within 7 Days)">Immediate (Within 7 Days)</option>
+              <option value="Next 30 Days (Upcoming Renewal)">Next 30 Days (Upcoming Renewal)</option>
+              <option value="Exploring Options / 60+ Days">Exploring Options / 60+ Days</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="qDetails">Specific Operations, Asset Details, or Current Policy Notes</label>
+            <textarea id="qDetails" class="form-textarea" rows="4" placeholder="e.g. 5 commercial service vans, current general liability renewing next month, or property square footage..."></textarea>
+          </div>
+        </div>
+
+        <!-- Step 4: Review -->
+        <div class="wizard-step-pane" data-step="4">
+          <h3 style="font-size: 1.125rem; margin-bottom: 6px;">Review Your Request</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-bottom: 20px;">Please verify your details before submitting.</p>
+
+          <div style="background-color: var(--color-bg-base); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 20px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid var(--color-border-subtle); padding-bottom: 8px;">
+              <span style="font-weight: 600; color: var(--color-text-secondary); font-size: 0.875rem;">Selected Coverage</span>
+              <span id="revCategory" style="font-weight: 700; color: var(--color-primary-blue);">Commercial</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid var(--color-border-subtle); padding-bottom: 8px;">
+              <span style="font-weight: 600; color: var(--color-text-secondary); font-size: 0.875rem;">Contact Name</span>
+              <span id="revName" style="font-weight: 600; color: var(--color-deep-navy);">-</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid var(--color-border-subtle); padding-bottom: 8px;">
+              <span style="font-weight: 600; color: var(--color-text-secondary); font-size: 0.875rem;">Direct Contact</span>
+              <span id="revContact" style="font-weight: 600; color: var(--color-deep-navy);">-</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid var(--color-border-subtle); padding-bottom: 8px;">
+              <span style="font-weight: 600; color: var(--color-text-secondary); font-size: 0.875rem;">Business / Entity</span>
+              <span id="revCompany" style="font-weight: 600; color: var(--color-deep-navy);">-</span>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span style="font-weight: 600; color: var(--color-text-secondary); font-size: 0.875rem;">Timeframe</span>
+              <span id="revTimeframe" style="font-weight: 600; color: var(--color-deep-navy);">-</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="wizard-footer">
+        <div class="confidential-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          Your information is treated confidentially.
+        </div>
+
+        <div style="display: flex; gap: 12px;">
+          <button type="button" class="btn btn-secondary btn-sm" id="wizardPrevBtn" style="visibility: hidden;">
+            Previous
+          </button>
+          <button type="button" class="btn btn-primary btn-sm" id="wizardNextBtn">
+            Continue
+            <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       14. Client Portal Modal
+       ======================================================================== -->
+  <div class="modal-overlay" id="portalModal" role="dialog" aria-modal="true" aria-labelledby="portalTitle">
+    <div class="modal-container" style="max-width: 520px;">
+      <button type="button" class="modal-close-btn" id="closePortalModal" aria-label="Close portal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Gateway Login View -->
+      <div id="portalLoginView" style="padding: 48px 36px; text-align: center;">
+        <div class="portal-lock-badge">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </div>
+
+        <h2 id="portalTitle" style="font-size: 1.625rem; margin-bottom: 8px;">Client Portal</h2>
+        <p style="color: var(--color-text-secondary); font-size: 0.9375rem; margin-bottom: 28px;">
+          Secure access for Insurance Services USA clients.
+        </p>
+
+        <form id="portalLoginForm">
+          <div class="portal-password-wrap">
+            <input type="password" id="portalPassword" class="form-input" placeholder="Enter Client Passcode" aria-label="Client Password" required>
+            <button type="button" class="portal-toggle-pw" id="togglePortalPw" aria-label="Toggle password view">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </button>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-bottom: 20px;">
+            Continue
+            <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </form>
+
+        <div style="font-size: 0.8125rem; color: var(--color-text-secondary); border-top: 1px solid var(--color-border); padding-top: 20px;">
+          Need help accessing your account?<br>
+          <a href="#contact" onclick="document.getElementById('portalModal').classList.remove('is-active');" style="color: var(--color-primary-blue); font-weight: 600;">Contact our team →</a>
+        </div>
+      </div>
+
+      <!-- Authenticated Dashboard View -->
+      <div id="portalDashboardView" style="display: none; padding: 40px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--color-border); padding-bottom: 16px; margin-bottom: 24px;">
+          <div>
+            <div class="eyebrow" style="margin-bottom: 4px;">AUTHENTICATED SESSION</div>
+            <h3 style="font-size: 1.25rem;">Client Dashboard</h3>
+          </div>
+          <button type="button" id="portalLogoutBtn" class="btn btn-secondary btn-sm">Sign Out</button>
+        </div>
+
+        <p style="color: var(--color-text-secondary); font-size: 0.9375rem; margin-bottom: 24px;">
+          Access your active policy schedules, request Certificates of Insurance (COI), or submit change orders.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <a href="javascript:void(0)" onclick="showToast('Certificate of Insurance (COI) request dispatched to Joe Coomer.')" class="btn btn-secondary" style="justify-content: space-between;">
+            <span>Request Certificate of Insurance (COI)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="javascript:void(0)" onclick="showToast('Auto ID card download initiated.')" class="btn btn-secondary" style="justify-content: space-between;">
+            <span>Download Commercial Auto ID Cards</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+
+          <a href="tel:8887475940" class="btn btn-secondary" style="justify-content: space-between;">
+            <span>Call Dedicated Broker (888-747-5940)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       15. Mobile Sticky Bottom Action Bar
+       ======================================================================== -->
+  <aside class="mobile-sticky-cta" aria-label="Quick Mobile Actions">
+    <div class="mobile-sticky-grid">
+      <a href="tel:8887475940" class="btn btn-secondary btn-sm">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        Call Us
+      </a>
+      <button type="button" class="btn btn-primary btn-sm" onclick="openQuoteWizard()">
+        Get a Quote →
+      </button>
+    </div>
+  </aside>
+
+  <!-- Application Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
